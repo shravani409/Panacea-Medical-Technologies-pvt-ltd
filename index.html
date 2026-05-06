@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Panacea Medical Technologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{scroll-behavior:smooth;color:#222;}
+
+/* BACKGROUND */
+.bg{
+position:fixed;width:100%;height:100%;
+background:linear-gradient(-45deg,#0b3d91,#1e88e5,#00acc1,#1565c0);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
+z-index:-2;
+}
+.overlay{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:-1;}
+
+/* NAV */
+nav{
+position:fixed;width:100%;top:0;
+display:flex;justify-content:center;gap:30px;
+padding:15px;background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);z-index:1000;
+}
+nav a{color:white;text-decoration:none;}
+nav a:hover{color:#ffeb3b;}
+
+/* HERO */
+.hero{
+height:100vh;display:flex;justify-content:center;align-items:center;
+flex-direction:column;color:white;text-align:center;
+}
+.hero h1{font-size:50px;}
+.hero p{margin-top:10px;}
+.btn{
+margin-top:20px;padding:12px 25px;
+background:white;color:#0b3d91;
+border-radius:30px;text-decoration:none;
+}
+
+/* SECTION */
+.section{padding:80px 20px;background:white;text-align:center;}
+.section h2{color:#0b3d91;margin-bottom:20px;}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;margin-top:30px;
+}
+
+/* CARD */
+.card{
+background:#f9fbff;padding:25px;border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+.card:hover{transform:translateY(-8px);}
+
+/* PRODUCT */
+.product{max-width:900px;margin:30px auto;}
+.product img{width:100%;border-radius:10px;}
+
+/* DARK SECTION */
+.dark{background:#0b3d91;color:white;}
+.dark h2{color:white;}
+.dark .card{background:rgba(255,255,255,0.1);color:white;}
+
+/* CONTACT */
+iframe{width:100%;height:300px;border-radius:10px;margin-top:20px;}
+
+/* FOOTER */
+footer{background:#0b3d91;color:white;padding:20px;text-align:center;}
+
+/* ANIMATION */
+.reveal{opacity:0;transform:translateY(40px);transition:1s;}
+.reveal.active{opacity:1;transform:translateY(0);}
+
+@keyframes gradient{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<!-- NAV -->
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+<h1>Panacea Medical Technologies</h1>
+<p>Advanced Medical Imaging & Radiation Therapy Solutions</p>
+<a href="#products" class="btn">Explore Products</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+<h2>About Us</h2>
+<p style="max-width:900px;margin:auto;">
+Panacea Medical Technologies Pvt Ltd is a leading Indian medical technology company specializing in advanced radiotherapy and oncology solutions, committed to improving global cancer care accessibility.
+</p>
+
+<div class="grid">
+<div class="card"><h3>🏢 Overview</h3><p>Established in 1999, headquartered in Karnataka.</p></div>
+<div class="card"><h3>🎯 Vision</h3><p>Global leader in affordable cancer care.</p></div>
+<div class="card"><h3>🚀 Mission</h3><p>Deliver reliable and precise healthcare solutions.</p></div>
+</div>
+</section>
+
+<!-- WHY -->
+<section class="section reveal">
+<h2>Why Choose Us</h2>
+<div class="grid">
+<div class="card">Advanced Technology</div>
+<div class="card">Cost Effective</div>
+<div class="card">Reliable Systems</div>
+<div class="card">Global Trust</div>
+</div>
+</section>
+
+<!-- NEW: TECHNOLOGY -->
+<section class="section reveal">
+<h2>Our Technology</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Precision Engineering</h3>
+<p>Designed for high accuracy radiation delivery ensuring patient safety.</p>
+</div>
+
+<div class="card">
+<h3>Advanced Imaging</h3>
+<p>High-resolution diagnostic systems for early disease detection.</p>
+</div>
+
+<div class="card">
+<h3>Automation & Control</h3>
+<p>Smart systems enabling efficient and controlled treatment workflows.</p>
+</div>
+</div>
+
+</section>
+
+<!-- NEW: APPLICATIONS -->
+<section class="section reveal">
+<h2>Applications in Healthcare</h2>
+
+<div class="grid">
+<div class="card">Cancer Treatment Centers</div>
+<div class="card">Hospitals & Clinics</div>
+<div class="card">Diagnostic Imaging Labs</div>
+<div class="card">Research Institutions</div>
+</div>
+
+</section>
+
+<!-- STATS -->
+<section class="section dark reveal">
+<h2>Our Impact</h2>
+
+<div class="grid">
+<div class="card"><h3>25+</h3><p>Years Experience</p></div>
+<div class="card"><h3>100+</h3><p>Installations</p></div>
+<div class="card"><h3>20+</h3><p>Countries</p></div>
+<div class="card"><h3>5000+</h3><p>Patients</p></div>
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section reveal">
+<h2>Products</h2>
+
+<div class="product">
+<h3>Bhabhatron II</h3>
+<img src="https://img.medicalexpo.com/images_me/photo-m2/128122-17974074.jpg">
+</div>
+
+<div class="product">
+<h3>IMAGIN Simulator</h3>
+<img src="https://img.medicalexpo.com/images_me/photo-g/128122-17973990.jpg">
+</div>
+
+<div class="product">
+<h3>LILAC Mammography</h3>
+<img src="https://d3edssu4vf7j1p.cloudfront.net/images/detailed/112/Panacea_Lilac_Advance_Digital_Mammography_Device__2_.jpg">
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+<h2>Visit Us</h2>
+
+<p>Malur, Karnataka, India</p>
+<p>+91 80424 28700</p>
+<p>contact@panaceamedical.com</p>
+
+<iframe src="https://maps.google.com/maps?q=Panacea%20Medical%20Technologies%20Malur&output=embed"></iframe>
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Panacea+Medical+Technologies+Malur" target="_blank">
+Get Directions
+</a>
+
+</section>
+
+<footer>
+© 2026 Panacea Medical Technologies
+</footer>
+
+<script>
+window.addEventListener('scroll', ()=>{
+document.querySelectorAll('.reveal').forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
